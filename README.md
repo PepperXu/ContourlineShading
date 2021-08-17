@@ -55,4 +55,5 @@
 - The RenderContour.cs is also essential for object-space fragment contours because it allows the camera to output the _CameraDepthNormalsTexture.
 - The edges are detected with “the Roberts Cross” in the fragment shader. 
 - The “inverted hull” technique is utilized in the vertex shader contours. In this case the scaling is done after the vertices are transformed into clip space, so that the thickness of the contour outlines is independent of the distance of the camera. However, this implementation has trouble dealing with the sharp edges (i.e. the cubes), which will “break” the outlines.
+
 ![Line Breaking](/Documentation/Break01.png "line breaking")
